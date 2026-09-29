@@ -10,7 +10,7 @@
     <h1 class="mb-2">Cartelera de Películas</h1>
     <p class="text-secondary mb-4">Datos consultados desde la base de datos mediante Django ORM.</p>
 
-    {{# Barra de acciones CRUD #}}
+    {# Barra de acciones CRUD #}
     <div class="d-flex flex-wrap gap-2 mb-4">
         <a href="/admin/app_movies/pelicula/add/" class="btn btn-cyan">
             + Agregar película
@@ -25,7 +25,7 @@
 
     {% if peliculas %}
 
-    {{# Vista tabla para pantallas grandes #}}
+    {# Vista tabla para pantallas grandes #}
     <div class="table-responsive d-none d-lg-block">
         <table class="table table-dark table-hover align-middle portal-table">
             <thead>
@@ -66,7 +66,7 @@
         </table>
     </div>
 
-    {{# Vista tarjetas para móvil #}}
+    {# Vista tarjetas para móvil #}
     <div class="row g-4 d-lg-none">
         {% for pelicula in peliculas %}
         <div class="col-md-6">
