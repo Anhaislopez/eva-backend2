@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Cartelera · Portal Geek &amp; Dev{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+    <p class="hero-kicker">app_movies · Django ORM · MySQL</p>
+    <h1 class="mb-2">Cartelera de Películas</h1>
+    <p class="text-secondary mb-4">Datos consultados desde la base de datos mediante Django ORM.</p>
+
+    {{# Barra de acciones CRUD #}}
+    <div class="d-flex flex-wrap gap-2 mb-4">
+        <a href="/admin/app_movies/pelicula/add/" class="btn btn-cyan">
+            + Agregar película
+        </a>
+        <a href="/admin/app_movies/pelicula/" class="btn btn-outline-light">
+            ✎ Gestionar películas
+        </a>
+        <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">
+            🔍 Buscar (Admin)
+        </a>
+    </div>
+
+    {% if peliculas %}
+
+    {{# Vista tabla para pantallas grandes #}}
+    <div class="table-responsive d-none d-lg-block">
+        <table class="table table-dark table-hover align-middle portal-table">
+            <thead>
+                <tr>
+                    <th>Portada</th>
+                    <th>Título</th>
+                    <th>Director</th>
+                    <th>Año</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pelicula in peliculas %}
+                <tr>
+                    <td>
+                        {% if pelicula.imagen %}
+                            <img src="{% static pelicula.imagen %}"
+                                 alt="{{ pelicula.titulo }}"
+                                 class="table-poster"
+                                 onerror="this.src='{% static 'images/placeholder.svg' %}'">
+                        {% else %}
+                            <img src="{% static 'images/placeholder.svg' %}"
+                                 alt="Sin imagen" class="table-poster">
+                        {% endif %}
+                    </td>
+                    <td>{{ pelicula.titulo }}</td>
+                    <td>{{ pelicula.director }}</td>
+                    <td>{{ pelicula.anio }}</td>
+                    <td>
+                        <a href="/admin/app_movies/pelicula/{{ pelicula.id }}/change/"
+                           class="btn btn-sm btn-outline-light me-1">Modificar</a>
+                        <a href="/admin/app_movies/pelicula/{{ pelicula.id }}/delete/"
+                           class="btn btn-sm btn-outline-danger">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {{# Vista tarjetas para móvil #}}
+    <div class="row g-4 d-lg-none">
+        {% for pelicula in peliculas %}
+        <div class="col-md-6">
+            <article class="card game-card h-100">
+                {% if pelicula.imagen %}
+                    <img src="{% static pelicula.imagen %}"
+                         class="card-img-top"
+                         alt="{{ pelicula.titulo }}"
+                         onerror="this.src='{% static 'images/placeholder.svg' %}'">
+                {% else %}
+                    <img src="{% static 'images/placeholder.svg' %}"
+                         class="card-img-top" alt="Sin imagen">
+                {% endif %}
+                <div class="card-body">
+                    <h2 class="h5">{{ pelicula.titulo }}</h2>
+                    <p class="mb-1">Director: {{ pelicula.director }}</p>
+                    <p class="mb-0">Año: {{ pelicula.anio }}</p>
+                </div>
+                <div class="card-footer d-flex gap-2">
+                    <a href="/admin/app_movies/pelicula/{{ pelicula.id }}/change/"
+                       class="btn btn-sm btn-outline-light flex-fill">Modificar</a>
+                    <a href="/admin/app_movies/pelicula/{{ pelicula.id }}/delete/"
+                       class="btn btn-sm btn-outline-danger flex-fill">Eliminar</a>
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% else %}
+    <div class="alert alert-secondary mt-4" role="alert">
+        No hay películas en la base de datos todavía.
+        <a href="/admin/app_movies/pelicula/add/" class="alert-link">Agregar desde Admin</a>
+        o ejecutar <code>python manage.py importar_datos</code>.
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

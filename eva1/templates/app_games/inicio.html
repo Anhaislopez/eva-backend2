@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio · Portal Geek &amp; Dev{% endblock %}
+
+{% block content %}
+<section class="hero-panel">
+    <div class="container py-5">
+        <p class="hero-kicker">boot sequence // portal.geek.dev</p>
+        <h1 class="display-4 fw-bold mb-3">Portal Geek &amp; Dev</h1>
+        <p class="lead col-lg-8">
+            Un hub para quienes programan de día y desbloquean logros de noche.
+            Explora catálogo indie, cartelera sci-fi y recomendaciones de estrenos.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-cyan" href="{% url 'games_catalogo' %}">Ver catálogo de juegos</a>
+            <a class="btn btn-magenta" href="{% url 'movies_cartelera' %}">Ir a la cartelera</a>
+            <a class="btn btn-outline-light" href="{% url 'movies_estrenos' %}">Próximos estrenos</a>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <article class="info-card h-100">
+                <h2 class="h5">App Games</h2>
+                <p>Catálogo de videojuegos consultado desde la base de datos mediante
+                   <strong>Django ORM</strong>. Modelos: Género, Plataforma y Juego.</p>
+            </article>
+        </div>
+        <div class="col-md-4">
+            <article class="info-card h-100">
+                <h2 class="h5">App Movies</h2>
+                <p>Cartelera y próximos estrenos obtenidos desde <strong>MySQL</strong>
+                   a través de Django ORM. Modelos: Director, Película y Estreno.</p>
+            </article>
+        </div>
+        <div class="col-md-4">
+            <article class="info-card h-100">
+                <h2 class="h5">Stack</h2>
+                <p>Django · MySQL/MariaDB · Django ORM · Django Admin · Bootstrap 5 ·
+                   Variables de entorno · Git.</p>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

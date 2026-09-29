@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Próximos Estrenos · Portal Geek &amp; Dev{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+    <p class="hero-kicker">app_movies · Django ORM · MySQL</p>
+    <h1 class="mb-2">Próximos Estrenos / Recomendaciones</h1>
+    <p class="text-secondary mb-4">Selección geek para la watchlist: ciencia ficción, animación y universos gamer.</p>
+
+    {{# Barra de acciones CRUD #}}
+    <div class="d-flex flex-wrap gap-2 mb-4">
+        <a href="/admin/app_movies/estreno/add/" class="btn btn-cyan">
+            + Agregar estreno
+        </a>
+        <a href="/admin/app_movies/estreno/" class="btn btn-outline-light">
+            ✎ Gestionar estrenos
+        </a>
+        <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">
+            🔍 Buscar (Admin)
+        </a>
+    </div>
+
+    {% if estrenos %}
+    <div class="row g-4">
+        {% for item in estrenos %}
+        <div class="col-md-6 col-lg-3">
+            <article class="card game-card h-100">
+                {% if item.imagen %}
+                    <img src="{% static item.imagen %}"
+                         class="card-img-top"
+                         alt="{{ item.titulo }}"
+                         onerror="this.src='{% static 'images/placeholder.svg' %}'">
+                {% else %}
+                    <img src="{% static 'images/placeholder.svg' %}"
+                         class="card-img-top" alt="Sin imagen">
+                {% endif %}
+                <div class="card-body">
+                    <h2 class="h5">{{ item.titulo }}</h2>
+                    <p class="badge text-bg-warning text-dark">{{ item.fecha }}</p>
+                    <p class="card-text">{{ item.recomendacion }}</p>
+                </div>
+                <div class="card-footer d-flex gap-2">
+                    <a href="/admin/app_movies/estreno/{{ item.id }}/change/"
+                       class="btn btn-sm btn-outline-light flex-fill">Modificar</a>
+                    <a href="/admin/app_movies/estreno/{{ item.id }}/delete/"
+                       class="btn btn-sm btn-outline-danger flex-fill">Eliminar</a>
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="alert alert-secondary mt-4" role="alert">
+        No hay estrenos en la base de datos todavía.
+        <a href="/admin/app_movies/estreno/add/" class="alert-link">Agregar desde Admin</a>
+        o ejecutar <code>python manage.py importar_datos</code>.
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}
