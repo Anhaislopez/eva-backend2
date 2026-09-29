@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220">
+  <rect width="300" height="220" fill="#0a0f1e"/>
+  <rect x="70"  y="80"  width="30" height="60" fill="#2de2e6" opacity="0.8"/>
+  <rect x="115" y="60"  width="30" height="80" fill="#f72585" opacity="0.8"/>
+  <rect x="160" y="95"  width="30" height="45" fill="#2de2e6" opacity="0.6"/>
+  <rect x="205" y="70"  width="30" height="70" fill="#f72585" opacity="0.6"/>
+  <line x1="60" y1="140" x2="245" y2="140" stroke="#9db0c9" stroke-width="1"/>
+  <text x="150" y="192" font-family="Consolas,monospace" font-size="12" fill="#9db0c9" text-anchor="middle">IndieCon: Pixel Wars</text>
+</svg>

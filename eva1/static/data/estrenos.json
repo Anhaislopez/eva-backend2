@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "The Last of Deploy 3",
+    "fecha": "Octubre 2026",
+    "recomendacion": "Para fans de narrativas post-apocalípticas y pipelines que nunca llegan a prod.",
+    "imagen": "images/movies/last-deploy.svg"
+  },
+  {
+    "titulo": "GTA: Vice Kernel",
+    "fecha": "Diciembre 2026",
+    "recomendacion": "Acción urbana, radios sintéticas y un mapa abierto para la watchlist gamer.",
+    "imagen": "images/movies/gta-kernel.svg"
+  },
+  {
+    "titulo": "Neon Git: The Movie",
+    "fecha": "Marzo 2027",
+    "recomendacion": "Cyberpunk visual, conflictos de ramas y un soundtrack de synthwave.",
+    "imagen": "images/movies/neon-git.svg"
+  },
+  {
+    "titulo": "IndieCon: Pixel Wars",
+    "fecha": "Mayo 2027",
+    "recomendacion": "Documental-ficción sobre estudios chicos, game jams y el milagro de un launch estable.",
+    "imagen": "images/movies/indiecon.svg"
+  }
+]

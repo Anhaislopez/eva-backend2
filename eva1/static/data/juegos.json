@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Nebula Protocol",
+    "genero": "Roguelike",
+    "plataforma": "PC / Switch",
+    "descripcion": "Explora naves abandonadas, decodifica contratos y sobrevive a jefes procedurale con builds de consola.",
+    "imagen": "images/games/nebula-protocol.svg"
+  },
+  {
+    "titulo": "Pixel Forge",
+    "genero": "Puzzle / Dev",
+    "plataforma": "PC / Web",
+    "descripcion": "Forja sprites, combina shaders y resuelve puzzles de arquitectura de software en un estudio indie.",
+    "imagen": "images/games/pixel-forge.svg"
+  },
+  {
+    "titulo": "Commit Quest",
+    "genero": "Aventura",
+    "plataforma": "PC / Linux",
+    "descripcion": "Viaja por repositorios malditos, mergea ramas y derrota bugs legendarios con tu equipo de merge.",
+    "imagen": "images/games/commit-quest.svg"
+  },
+  {
+    "titulo": "Arcade Kernel",
+    "genero": "Shoot 'em up",
+    "plataforma": "PC / Arcade",
+    "descripcion": "Un shmup de 16 bits donde cada power-up es un syscall y el high score vive en memoria compartida.",
+    "imagen": "images/games/arcade-kernel.svg"
+  },
+  {
+    "titulo": "Lan Party Legends",
+    "genero": "Party / Multijugador",
+    "plataforma": "PC / Consola",
+    "descripcion": "Minijuegos competitivos inspirados en maratones de cables, snacks y clanes de madrugada.",
+    "imagen": "images/games/lan-party.svg"
+  },
+  {
+    "titulo": "Ghost Compiler",
+    "genero": "Terror / Puzzle",
+    "plataforma": "PC",
+    "descripcion": "Un compilador encantado te habla en stack traces. Encuentra el warning que no debiste ignorar.",
+    "imagen": "images/games/ghost-compiler.svg"
+  }
+]

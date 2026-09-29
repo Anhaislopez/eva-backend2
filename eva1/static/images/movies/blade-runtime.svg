@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220">
+  <rect width="300" height="220" fill="#0a0f1e"/>
+  <rect x="0" y="0" width="300" height="220" fill="url(#rain)"/>
+  <line x1="150" y1="40" x2="150" y2="160" stroke="#f72585" stroke-width="3"/>
+  <polygon points="150,160 130,120 170,120" fill="#f72585"/>
+  <circle cx="150" cy="100" r="50" fill="none" stroke="#2de2e6" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="150" y="192" font-family="Consolas,monospace" font-size="12" fill="#9db0c9" text-anchor="middle">Blade Runtime</text>
+</svg>

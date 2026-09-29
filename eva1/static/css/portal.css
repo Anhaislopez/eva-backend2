@@ -1,0 +1,93 @@
+:root {
+    --bg: #070b14;
+    --panel: #10182a;
+    --cyan: #2de2e6;
+    --magenta: #f72585;
+    --text: #e8f1ff;
+}
+
+body {
+    background:
+        radial-gradient(circle at top right, rgba(45, 226, 230, 0.12), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(247, 37, 133, 0.12), transparent 30%),
+        var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.portal-nav {
+    background: rgba(7, 11, 20, 0.94);
+    border-bottom: 1px solid rgba(45, 226, 230, 0.35);
+}
+
+.navbar-brand {
+    font-family: Consolas, "Courier New", monospace;
+    letter-spacing: 0.04em;
+}
+
+.brand-glyph {
+    color: var(--cyan);
+    margin-right: 0.35rem;
+}
+
+.hero-panel {
+    background: linear-gradient(120deg, rgba(16, 24, 42, 0.9), rgba(7, 11, 20, 0.4));
+    border-bottom: 1px solid rgba(247, 37, 133, 0.25);
+}
+
+.hero-kicker {
+    color: var(--cyan);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.9rem;
+}
+
+.btn-cyan {
+    background: var(--cyan);
+    color: #041016;
+    font-weight: 600;
+}
+
+.btn-magenta {
+    background: var(--magenta);
+    color: #fff;
+    font-weight: 600;
+}
+
+.info-card,
+.game-card {
+    background: var(--panel);
+    border: 1px solid rgba(45, 226, 230, 0.2);
+    color: var(--text);
+}
+
+.info-card {
+    padding: 1.4rem;
+    border-radius: 0.8rem;
+}
+
+.game-card img,
+.table-poster {
+    object-fit: cover;
+}
+
+.game-card img {
+    height: 220px;
+}
+
+.table-poster {
+    width: 72px;
+    height: 96px;
+    border-radius: 0.35rem;
+}
+
+.portal-table {
+    --bs-table-bg: #10182a;
+    --bs-table-hover-bg: #18233b;
+}
+
+.portal-footer {
+    background: #05080f;
+    border-top: 1px solid rgba(45, 226, 230, 0.25);
+    color: #9db0c9;
+    font-size: 0.92rem;
+}

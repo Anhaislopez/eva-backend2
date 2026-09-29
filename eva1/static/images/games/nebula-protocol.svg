@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220">
+  <rect width="300" height="220" fill="#0a0f1e"/>
+  <circle cx="150" cy="90" r="55" fill="none" stroke="#2de2e6" stroke-width="2"/>
+  <circle cx="150" cy="90" r="35" fill="rgba(45,226,230,0.15)"/>
+  <text x="150" y="96" font-family="Consolas,monospace" font-size="13" fill="#2de2e6" text-anchor="middle">NEBULA</text>
+  <text x="150" y="175" font-family="Consolas,monospace" font-size="12" fill="#9db0c9" text-anchor="middle">Nebula Protocol</text>
+</svg>

@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Matrix Rewrite",
+    "director": "Lana K. Debug",
+    "anio": 1999,
+    "imagen": "images/movies/matrix-rewrite.svg"
+  },
+  {
+    "titulo": "Blade Runtime",
+    "director": "Ridley Cache",
+    "anio": 2017,
+    "imagen": "images/movies/blade-runtime.svg"
+  },
+  {
+    "titulo": "Spider-Verse Commit",
+    "director": "Bob Persimmon",
+    "anio": 2018,
+    "imagen": "images/movies/spider-commit.svg"
+  },
+  {
+    "titulo": "Dune: Arrakis OS",
+    "director": "Denis Kernel",
+    "anio": 2021,
+    "imagen": "images/movies/dune-os.svg"
+  },
+  {
+    "titulo": "Ghost in the Shellcode",
+    "director": "Mamoru Patch",
+    "anio": 1995,
+    "imagen": "images/movies/ghost-shellcode.svg"
+  },
+  {
+    "titulo": "Everything Everywhere All at Deploy",
+    "director": "Daniels CI",
+    "anio": 2022,
+    "imagen": "images/movies/everywhere-deploy.svg"
+  }
+]

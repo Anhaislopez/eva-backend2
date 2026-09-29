@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220">
+  <rect width="300" height="220" fill="#0a0f1e"/>
+  <rect x="60" y="70" width="50" height="35" rx="3" fill="#10182a" stroke="#2de2e6" stroke-width="1.5"/>
+  <rect x="125" y="55" width="50" height="35" rx="3" fill="#10182a" stroke="#f72585" stroke-width="1.5"/>
+  <rect x="190" y="70" width="50" height="35" rx="3" fill="#10182a" stroke="#2de2e6" stroke-width="1.5"/>
+  <line x1="110" y1="90" x2="125" y2="75" stroke="#9db0c9" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="175" y1="75" x2="190" y2="90" stroke="#9db0c9" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="150" y="175" font-family="Consolas,monospace" font-size="12" fill="#9db0c9" text-anchor="middle">Lan Party Legends</text>
+</svg>
