@@ -1,6 +1,9 @@
 # Variables de entorno - NUNCA subir al repositorio
 .env
 
+# Claves SSH - NUNCA subir al repositorio
+*.pem
+
 # Entornos virtuales
 venv/
 backend1/
