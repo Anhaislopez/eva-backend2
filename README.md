@@ -83,10 +83,6 @@ Gestiona la cartelera y los próximos estrenos.
 ssh -i "ruta\a\ubuntu.pem" ubuntu@44.216.250.23
 ```
 
-```bash
-# Linux / macOS
-ssh -i "ruta/a/ubuntu.pem" ubuntu@44.216.250.23
-```
 
 > Si da error de permisos en Windows, ejecutar primero:
 > ```powershell
@@ -279,3 +275,38 @@ python manage.py runserver 0.0.0.0:8000
 ## Repositorio
 
 https://github.com/Anhaislopez/eva-backend2
+
+---
+
+## Credenciales del proyecto (solo para revisión académica)
+
+### Servidor EC2
+| Parámetro | Valor |
+|---|---|
+| IP Elástica | 44.216.250.23 |
+| Usuario SSH | ubuntu |
+| Clave SSH | ubuntu.pem |
+
+### Django Admin
+| Parámetro | Valor |
+|---|---|
+| URL | http://44.216.250.23:8000/admin/ |
+| Usuario | admin |
+| Contraseña | admin1234 |
+
+### phpMyAdmin
+| Parámetro | Valor |
+|---|---|
+| URL | http://44.216.250.23/phpmyadmin |
+| Usuario | eva2_user |
+| Contraseña | Eva2_Pass2026! |
+| Base de datos | eva2_portal |
+
+### MySQL (conexión directa)
+| Parámetro | Valor |
+|---|---|
+| Host | localhost |
+| Puerto | 3306 |
+| Base de datos | eva2_portal |
+| Usuario | eva2_user |
+| Contraseña | Eva2_Pass2026! |
