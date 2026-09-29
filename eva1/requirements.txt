@@ -1,0 +1,14 @@
+# Portal Geek & Dev - EVA2
+# Instalar con: pip install -r requirements.txt
+
+# Framework principal
+Django==5.2.1
+
+# Carga de variables de entorno desde .env
+python-dotenv==1.0.1
+
+# Driver MySQL/MariaDB
+# mysqlclient es el driver recomendado por Django para MySQL.
+# Funciona en Windows (requiere MySQL Connector C) y en Linux (apt install libmysqlclient-dev).
+# Alternativa pura Python si hay problemas de compilación en Windows: PyMySQL==1.1.1
+mysqlclient==2.2.4
